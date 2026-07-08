@@ -93,6 +93,8 @@
   .feat-grid > div:last-child{border-right:none;}
   @media (max-width:700px){.feat-grid>div:nth-child(2n){border-right:none;}}
   .feat-grid .f-icon{font-size:22px;margin-bottom:10px;}
+  .f-icon svg, .i-ic svg{width:24px;height:24px;stroke:var(--orange-400);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;display:block;}
+  .i-ic{display:inline-flex;vertical-align:middle;}
   .feat-grid b{display:block;color:var(--cream-100);font-size:13px;letter-spacing:.6px;text-transform:uppercase;margin-bottom:4px;font-family:"Poppins",sans-serif;font-weight:700;}
   .feat-grid span{font-size:12.5px;color:var(--ink-on-dark-dim);font-family:"Poppins",sans-serif;}
 
@@ -105,7 +107,8 @@
   /* AUTHOR */
   .author-box{display:grid;grid-template-columns:.5fr 1fr;gap:32px;align-items:center;background:var(--cream-100);border:1px solid var(--line);border-radius:20px;padding:32px;}
   @media (max-width:760px){.author-box{grid-template-columns:1fr;text-align:center;}}
-  .author-photo{width:100%;aspect-ratio:1/1;border-radius:50%;background:linear-gradient(135deg,var(--orange-400),var(--orange-600));display:flex;align-items:center;justify-content:center;font-size:52px;color:#fff;max-width:190px;margin:0 auto;}
+  .author-photo{width:100%;aspect-ratio:1/1;border-radius:50%;background:linear-gradient(135deg,var(--orange-400),var(--orange-600));display:flex;align-items:center;justify-content:center;font-size:52px;color:#fff;max-width:190px;margin:0 auto;overflow:hidden;}
+  .author-photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%;}
   .author-box h3{font-size:20px;margin-bottom:6px;font-family:"Anton",sans-serif;}
   .author-box .role{color:var(--orange-600);font-weight:700;font-size:13px;margin-bottom:12px;font-family:"Poppins",sans-serif;letter-spacing:.4px;text-transform:uppercase;}
   .author-box p.bio{color:var(--ink-700);font-size:14.5px;line-height:1.75;font-family:"Poppins",sans-serif;}
@@ -330,17 +333,17 @@
 
 <div class="feat-band">
   <div class="wrap feat-grid">
-    <div><div class="f-icon">🧠</div><b>Phương pháp khoa học</b><span>Dựa trên đặc điểm phát triển não bộ trẻ nhỏ</span></div>
-    <div><div class="f-icon">👨‍👩‍👧</div><b>Ba mẹ đồng hành</b><span>Bài tập đơn giản, làm cùng con mỗi ngày</span></div>
-    <div><div class="f-icon">🎨</div><b>Học mà chơi</b><span>Hình ảnh, trò chơi, câu chuyện sinh động</span></div>
-    <div><div class="f-icon">✅</div><b>Cam kết chất lượng</b><span>Hỗ trợ đổi lại nếu chưa hài lòng trong 7 ngày</span></div>
+    <div><div class="f-icon"><svg viewBox="0 0 24 24"><path d="M9 3a4 4 0 0 0-4 4v.3A3.5 3.5 0 0 0 3 10.5 3.5 3.5 0 0 0 5.5 14H6v3a4 4 0 0 0 4 4h1V3H9Z"/><path d="M15 3a4 4 0 0 1 4 4v.3a3.5 3.5 0 0 1 2 3.2 3.5 3.5 0 0 1-2.5 3.5H18v3a4 4 0 0 1-4 4h-1V3h2Z"/></svg></div><b>Phương pháp khoa học</b><span>Dựa trên đặc điểm phát triển não bộ trẻ nhỏ</span></div>
+    <div><div class="f-icon"><svg viewBox="0 0 24 24"><circle cx="8" cy="7" r="3"/><circle cx="17" cy="8" r="2.4"/><path d="M2.5 20v-1.5A4.5 4.5 0 0 1 7 14h2a4.5 4.5 0 0 1 4.5 4.5V20"/><path d="M15.5 20v-1a3.6 3.6 0 0 1 3.6-3.6h.4a3.5 3.5 0 0 1 3 1.7"/></svg></div><b>Ba mẹ đồng hành</b><span>Bài tập đơn giản, làm cùng con mỗi ngày</span></div>
+    <div><div class="f-icon"><svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 1 0-18c4.5 0 8 3 8 6.5 0 2-1.5 3.5-3.5 3.5H15a2 2 0 0 0-1.5 3.3c.4.5.6 1 .3 1.7-.4.9-1 2-1.8 3Z"/><circle cx="7.5" cy="10.5" r="1"/><circle cx="9.5" cy="7" r="1"/><circle cx="14.5" cy="6.5" r="1"/><circle cx="17" cy="10" r="1"/></svg></div><b>Học mà chơi</b><span>Hình ảnh, trò chơi, câu chuyện sinh động</span></div>
+    <div><div class="f-icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg></div><b>Cam kết chất lượng</b><span>Hỗ trợ đổi lại nếu chưa hài lòng trong 7 ngày</span></div>
   </div>
 </div>
 
 <section id="author">
   <div class="wrap">
     <div class="author-box">
-      <div class="author-photo">👩‍🏫</div>
+      <div class="author-photo"><img src="img/song-uyen-portrait.jpeg" alt="Chân dung tác giả Song Uyên" /></div>
       <div>
         <h3>Song Uyên</h3>
         <div class="role">Tác giả sách "Đánh Thức Não Phải"</div>
@@ -417,12 +420,12 @@
       <div class="includes-card">
         <div class="ic-title">Trọn bộ gồm có</div>
         <div class="includes-list">
-          <div class="includes-row"><span class="i-ic">📖</span> 5 CHƯƠNG SÁCH (EBOOK PDF)</div>
-          <div class="includes-row"><span class="i-ic">🏋️</span> 15+ BÀI TẬP THỰC HÀNH</div>
-          <div class="includes-row"><span class="i-ic">🎬</span> VIDEO HƯỚNG DẪN CHI TIẾT</div>
-          <div class="includes-row"><span class="i-ic">🗂️</span> BỘ THẺ HÌNH ẢNH IN ĐƯỢC</div>
-          <div class="includes-row"><span class="i-ic">💬</span> NHÓM ZALO HỖ TRỢ RIÊNG</div>
-          <div class="includes-row"><span class="i-ic">♾️</span> TRUY CẬP TRỌN ĐỜI</div>
+          <div class="includes-row"><span class="i-ic"><svg viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5v-13Z"/></svg></span> 5 CHƯƠNG SÁCH (EBOOK PDF)</div>
+          <div class="includes-row"><span class="i-ic"><svg viewBox="0 0 24 24"><path d="M6.5 7v10M17.5 7v10"/><path d="M3 9.5h3v5H3zM18 9.5h3v5h-3z"/><path d="M6.5 12h11"/></svg></span> 15+ BÀI TẬP THỰC HÀNH</div>
+          <div class="includes-row"><span class="i-ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="M16 10.5l5-3v9l-5-3Z"/></svg></span> VIDEO HƯỚNG DẪN CHI TIẾT</div>
+          <div class="includes-row"><span class="i-ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="12" height="15" rx="2" transform="rotate(-8 10 11.5)"/><rect x="8" y="6" width="12" height="15" rx="2"/></svg></span> BỘ THẺ HÌNH ẢNH IN ĐƯỢC</div>
+          <div class="includes-row"><span class="i-ic"><svg viewBox="0 0 24 24"><path d="M4 5h16v10.5H9L5 19v-3.5H4Z"/><path d="M8 9.5h8M8 12h5"/></svg></span> NHÓM ZALO HỖ TRỢ RIÊNG</div>
+          <div class="includes-row"><span class="i-ic"><svg viewBox="0 0 24 24"><path d="M7 8a4 4 0 1 0 0 8c2.5 0 3.5-1.7 5-4s2.5-4 5-4a4 4 0 1 1 0 8c-2.5 0-3.5-1.7-5-4s-2.5-4-5-4Z"/></svg></span> TRUY CẬP TRỌN ĐỜI</div>
         </div>
         <a href="#pricing" class="btn btn-cream" style="width:100%;">Xem giá ưu đãi</a>
       </div>
@@ -432,11 +435,11 @@
 
 <div class="feat-band">
   <div class="wrap" style="display:grid;grid-template-columns:repeat(5,1fr);text-align:center;padding:34px 0;">
-    <div><div class="f-icon">🧩</div><b style="font-size:12px;">Ghi nhớ tốt hơn</b></div>
-    <div><div class="f-icon">🎯</div><b style="font-size:12px;">Tập trung hơn</b></div>
-    <div><div class="f-icon">🎨</div><b style="font-size:12px;">Tư duy sáng tạo</b></div>
-    <div><div class="f-icon">😊</div><b style="font-size:12px;">Tự tin hơn</b></div>
-    <div><div class="f-icon">❤️</div><b style="font-size:12px;">Yêu thích học tập</b></div>
+    <div><div class="f-icon" style="display:flex;justify-content:center;"><svg viewBox="0 0 24 24"><path d="M9 4a2.5 2.5 0 0 0-2.5 2.5V7A2.5 2.5 0 0 0 4 9.5a2.5 2.5 0 0 0 1.8 2.4A2.5 2.5 0 0 0 8 15h1V4H9Z"/><path d="M15 4a2.5 2.5 0 0 1 2.5 2.5V7A2.5 2.5 0 0 1 20 9.5a2.5 2.5 0 0 1-1.8 2.4A2.5 2.5 0 0 1 16 15h-1V4h0Z"/><path d="M9 15v3a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-3"/></svg></div><b style="font-size:12px;">Ghi nhớ tốt hơn</b></div>
+    <div><div class="f-icon" style="display:flex;justify-content:center;"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".6" fill="currentColor"/></svg></div><b style="font-size:12px;">Tập trung hơn</b></div>
+    <div><div class="f-icon" style="display:flex;justify-content:center;"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6.5 6.5 0 0 0-4 11.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A6.5 6.5 0 0 0 12 3Z"/></svg></div><b style="font-size:12px;">Tư duy sáng tạo</b></div>
+    <div><div class="f-icon" style="display:flex;justify-content:center;"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 14.5s1.3 2 3.5 2 3.5-2 3.5-2"/><path d="M8.5 9.5h.01M15.5 9.5h.01"/></svg></div><b style="font-size:12px;">Tự tin hơn</b></div>
+    <div><div class="f-icon" style="display:flex;justify-content:center;"><svg viewBox="0 0 24 24"><path d="M12 20.5S3.5 15.8 3.5 9.8A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 8.5 1.8c0 6-8.5 10.7-8.5 10.7Z"/></svg></div><b style="font-size:12px;">Yêu thích học tập</b></div>
   </div>
 </div>
 
