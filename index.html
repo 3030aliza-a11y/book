@@ -143,6 +143,15 @@
   .includes-row{display:flex;align-items:center;gap:12px;font-size:13.5px;font-family:"Poppins",sans-serif;font-weight:600;}
   .includes-row .i-ic{font-size:17px;}
 
+  /* PREVIEW */
+  .preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  @media (max-width:760px){.preview-grid{grid-template-columns:1fr;max-width:320px;margin:0 auto;}}
+  .preview-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 14px 30px rgba(36,26,18,.08);position:relative;}
+  .preview-card img{width:100%;display:block;}
+  .preview-cap{text-align:center;padding:10px;font-size:12.5px;font-weight:700;color:var(--ink-700);font-family:"Poppins",sans-serif;border-top:1px solid var(--line);}
+  .preview-card.locked img{filter:blur(3px) brightness(.85);}
+  .preview-lock{position:absolute;top:0;left:0;right:0;bottom:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;font-size:12.5px;font-weight:700;line-height:1.5;background:rgba(28,19,13,.35);font-family:"Poppins",sans-serif;}
+
   /* TESTIMONIALS (dark cards) */
   .testi-section{background:var(--bg-dark);color:var(--cream-100);}
   .testi-section .sec-tag{color:var(--orange-400);}
@@ -372,8 +381,8 @@
   <div class="wrap">
     <div class="leadmagnet" id="leadmagnet">
       <div>
-        <h3>Nhận miễn phí: checklist 5 bài tập đánh thức não phải</h3>
-        <p>Áp dụng ngay hôm nay tại nhà, không cần chờ mua sách. Để lại email, checklist sẽ được gửi cho bạn.</p>
+        <h3>Đọc thử miễn phí: Mục lục + trọn 2 chương đầu</h3>
+        <p>Để lại email, bạn sẽ nhận ngay file PDF đọc thử — không cần chờ mua sách. Thích thì đọc tiếp trọn bộ 5 chương với giá 69.000đ.</p>
       </div>
       <form id="lead-form">
         <input type="email" id="lead-email" required placeholder="Email của bạn" />
@@ -430,6 +439,34 @@
     <div><div class="f-icon">❤️</div><b style="font-size:12px;">Yêu thích học tập</b></div>
   </div>
 </div>
+
+<section id="preview">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="kicker" style="justify-content:center;">Xem trước sách</div>
+      <h2>Đọc thử vài trang trước khi mua</h2>
+      <p>3 trang mẫu dưới đây trích từ sách thật. Mua trọn bộ 69.000đ để đọc đủ 5 chương + toàn bộ bài tập.</p>
+    </div>
+    <div class="preview-grid">
+      <div class="preview-card">
+        <img src="img/nao-phai-preview-cover.png" alt="Trang bìa sách Đánh Thức Não Phải" loading="lazy" />
+        <div class="preview-cap">Trang bìa</div>
+      </div>
+      <div class="preview-card">
+        <img src="img/nao-phai-preview-loimodau.png" alt="Trang Lời mở đầu sách Đánh Thức Não Phải" loading="lazy" />
+        <div class="preview-cap">Lời mở đầu</div>
+      </div>
+      <div class="preview-card locked">
+        <img src="img/nao-phai-preview-loiket.png" alt="Trang Lời kết sách Đánh Thức Não Phải" loading="lazy" />
+        <div class="preview-lock">🔒<br>Mua để đọc<br>5 chương đầy đủ</div>
+        <div class="preview-cap">Lời kết</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:26px;">
+      <a href="#pricing" class="btn btn-primary">Mua trọn bộ — 69.000đ →</a>
+    </div>
+  </div>
+</section>
 
 <section id="testimonials" class="testi-section">
   <div class="wrap">
